@@ -9,3 +9,4 @@ creating a directory
 moving file
 deleting file
 symblic link
+deleting the directory
