@@ -10,6 +10,6 @@ moving file
 deleting file
 symblic link
 deleting the directory
-chaning working directory
-listing all files
+changing working directory
+listing all files in the current directory
 
