@@ -5,3 +5,4 @@ changing working directory
 listing long format
 show hidden files
 displaying numerical contents
+creating a directory
