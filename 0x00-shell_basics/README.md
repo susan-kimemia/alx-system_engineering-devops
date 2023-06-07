@@ -10,3 +10,5 @@ moving file
 deleting file
 symblic link
 deleting the directory
+chaning working directory
+
