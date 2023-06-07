@@ -7,3 +7,4 @@ show hidden files
 displaying numerical contents
 creating a directory
 moving file
+deleting file
