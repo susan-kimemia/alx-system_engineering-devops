@@ -8,3 +8,4 @@ displaying numerical contents
 creating a directory
 moving file
 deleting file
+symblic link
