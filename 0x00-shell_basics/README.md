@@ -11,6 +11,7 @@ deleting file
 symblic link
 deleting the directory
 changing working directory
-listing all files in  long format
+listing long format
+creating copies
 
 
