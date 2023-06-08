@@ -14,4 +14,5 @@ changing working directory
 listing long format
 create copies at the htl
 prints
+creating a symbolic link
 
