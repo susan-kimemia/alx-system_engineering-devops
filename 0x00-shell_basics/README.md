@@ -17,4 +17,5 @@ prints
 creating a symbolic link
 copies of html
 moving all files
+deleting all files
 
