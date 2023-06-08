@@ -10,3 +10,4 @@ adds execution permission
 setting the permission
 setting the mode
 setting the mode
+adds execute permission
