@@ -12,6 +12,6 @@ symblic link
 deleting the directory
 changing working directory
 listing long format
-create copies at the html
-
+create copies at the htl
+prints
 
