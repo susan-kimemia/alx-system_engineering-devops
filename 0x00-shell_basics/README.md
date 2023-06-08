@@ -19,4 +19,5 @@ copies of html
 moving all files
 deleting all files
 creating directories
+listin files and directories
 
