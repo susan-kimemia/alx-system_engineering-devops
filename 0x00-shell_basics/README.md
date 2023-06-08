@@ -20,4 +20,5 @@ moving all files
 deleting all files
 creating directories
 listin files and directories
+creating a maic file
 
