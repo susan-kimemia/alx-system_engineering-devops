@@ -5,3 +5,4 @@ print all groups
 changing owner of the file
 empty file
 execute permission
+adds execute permission
