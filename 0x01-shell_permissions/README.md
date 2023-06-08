@@ -12,3 +12,4 @@ setting the mode
 setting the mode
 adds execute permission
 creating a directory
+changing the group owner
