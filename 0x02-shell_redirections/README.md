@@ -1,1 +1,2 @@
-shell redirections
+#!/bin/bash
+hello world
