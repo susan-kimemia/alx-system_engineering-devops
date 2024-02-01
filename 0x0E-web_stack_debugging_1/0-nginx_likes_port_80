@@ -1,38 +1,7 @@
 #!/usr/bin/env bash
-# Debugging to find out what is keeping my Ubuntu container's...
 # Nginx installation from listening on port 80
 # Delete the existing ../sites-enabled/default and replace it with a copy of
 # ../sites-available/default. Do that by creating a symbolic link
 # The flag -s creates a symbolic link, -f deletes the existing file and replaces it
-if dpkg -l | grep -q "nginx"; then
-	echo "Nginx is already installed."
-else
-	if ! sudo apt-get update; then
-		echo "Failed to update package lists. Exiting."
-		exit 1
-	fi
-	
-	if ! sudo apt-get -y install nginx; then
-		echo "Failed to install Nginx. Exiting."
-		exit 1
-	fi
-fi
-
-if ! sudo ufw allow "Nginx HTTP"; then
-	echo "Failed to allow Nginx HTTP traffic in the firewall."
-fi
-
-if [ -e /etc/nginx/sites-available/default ]; then
-	# Backup existing configuration
-	if ! sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak; then
-		echo "Failed to backup the Nginx configuration.
-		Continuing without backup."
-	else
-		echo "Nginx configuration backed up successfully."
-	fi
-fi
-
-replace="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
-sudo sed -i "s/listen 80 default_server;/$replace/" /etc/nginx/sites-available/default
-
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
